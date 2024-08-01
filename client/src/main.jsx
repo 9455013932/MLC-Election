@@ -31,6 +31,8 @@ import Cookies from 'js-cookie';
 import Voters from './components/QCStaff/Voters.jsx';
 import DispatchLetter from './components/QCStaff/DispatchLetter.jsx';
 import SendSMSForm from './components/QCStaff/SendSMSForm.jsx';
+import MISDistrict from './components/Admin/Reports/MISDistrict.jsx';
+import MISPollingStation from './components/Admin/Reports/MISPollingStation.jsx';
 
 const getRoutesForRole = (role) => {
   switch (role) {
@@ -69,6 +71,8 @@ const getRoutesForRole = (role) => {
           <Route path="/areaVill" element={<AreaVill />} />
           <Route path="/pollingStationList" element={<PollongStationList />} />
           <Route path="/pollingStationAllotment" element={<PollingStationAllotment />} />
+          <Route path="/MISDistrict" element={<MISDistrict />} />
+          <Route path="/MISPollingStationwise" element={<MISPollingStation />} />
         </>
       );
     case 'Sub Admin':
